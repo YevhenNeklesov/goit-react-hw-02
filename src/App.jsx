@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Descriptions from './components/Description/Description'
+import Description from './components/Description/Description'
 import Feedback from './components/Feedback/Feedback'
 import Notification from './components/Feedback/Notification/Notification'
 import Options from './components/Options/Options'
@@ -42,7 +42,7 @@ const App = () => {
     
   return (
     <div>
-      <Descriptions />
+      <Description/>
       <Options updateFeedback={updateFeedback} totalFeedback={totalFeedback} resetOptions={resetOptions}/>
       {totalFeedback > 0 ? <Feedback options={options} totalFeedback={totalFeedback} positiveFeedback={positiveFeedback}
       />: <Notification/>}
