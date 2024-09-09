@@ -1,5 +1,5 @@
 
-const Descriptions = () => {
+const Description = () => {
   return (
       <>
           <div />
@@ -11,4 +11,4 @@ const Descriptions = () => {
   )
 }
 
-export default Descriptions
+export default Description
